@@ -19,6 +19,6 @@ public class RepositoryController {
     @GetMapping("/user/{username}/repositories")
     public ResponseEntity<?> getRepositories(@PathVariable String username, @RequestHeader("Accept") String acceptHeader)
     {
-        return repositoryService.getRepositories(username, acceptHeader);
+        return repositoryService.getRepositories(username);
     }
 }
