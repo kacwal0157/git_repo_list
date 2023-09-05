@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping(path = "/api")
 public class RepositoryController {
@@ -17,7 +15,7 @@ public class RepositoryController {
     }
 
     @GetMapping("/user/{username}/repositories")
-    public ResponseEntity<?> getRepositories(@PathVariable String username, @RequestHeader("Accept") String acceptHeader)
+    public ResponseEntity<?> getRepositories(@PathVariable String username)
     {
         return repositoryService.getRepositories(username);
     }

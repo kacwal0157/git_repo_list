@@ -1,47 +1,40 @@
 package com.repo.githubRepoList.Repository;
 
+import java.util.Map;
+
 public class Repository {
     String repositoryName;
     String ownerLogin;
-    String branchName;
-    Long commitSha;
 
-    public Repository(String repositoryName, String ownerLogin, String branchName, Long commitSha) {
+    Map<String, String> branches;
+
+    public Repository(String repositoryName, String ownerLogin, Map<String, String> branches) {
         this.repositoryName = repositoryName;
         this.ownerLogin = ownerLogin;
-        this.branchName = branchName;
-        this.commitSha = commitSha;
+        this.branches = branches;
     }
 
     public String getRepositoryName() {
         return repositoryName;
     }
 
-    public String getOwnerLogin() {
-        return ownerLogin;
-    }
-
-    public String getBranchName() {
-        return branchName;
-    }
-
-    public Long getCommitSha() {
-        return commitSha;
-    }
-
     public void setRepositoryName(String repositoryName) {
         this.repositoryName = repositoryName;
+    }
+
+    public String getOwnerLogin() {
+        return ownerLogin;
     }
 
     public void setOwnerLogin(String ownerLogin) {
         this.ownerLogin = ownerLogin;
     }
 
-    public void setBranchName(String branchName) {
-        this.branchName = branchName;
+    public Map<String, String> getBranches() {
+        return branches;
     }
 
-    public void setCommitSha(Long commitSha) {
-        this.commitSha = commitSha;
+    public void setBranches(Map<String, String> branches) {
+        this.branches = branches;
     }
 }
