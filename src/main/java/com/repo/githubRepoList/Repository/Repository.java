@@ -1,40 +1,16 @@
-package com.repo.githubRepoList.Repository;
+package com.repo.githubRepoList.repository;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Map;
 
+@AllArgsConstructor
+@Getter
+@Setter
 public class Repository {
     String repositoryName;
     String ownerLogin;
-
     Map<String, String> branches;
-
-    public Repository(String repositoryName, String ownerLogin, Map<String, String> branches) {
-        this.repositoryName = repositoryName;
-        this.ownerLogin = ownerLogin;
-        this.branches = branches;
-    }
-
-    public String getRepositoryName() {
-        return repositoryName;
-    }
-
-    public void setRepositoryName(String repositoryName) {
-        this.repositoryName = repositoryName;
-    }
-
-    public String getOwnerLogin() {
-        return ownerLogin;
-    }
-
-    public void setOwnerLogin(String ownerLogin) {
-        this.ownerLogin = ownerLogin;
-    }
-
-    public Map<String, String> getBranches() {
-        return branches;
-    }
-
-    public void setBranches(Map<String, String> branches) {
-        this.branches = branches;
-    }
 }
