@@ -1,4 +1,4 @@
-# GitHub Repository Lister API
+# GitHub Repository Listener API
 
 ## The project written in Java 17 using Spring Boot 3 showing a list of repo for given user.
 
