@@ -27,9 +27,11 @@ please submit an issue using the issue tab above.
 ## Known issues
 
 *What if I get an error that says: "{Your browser} can't connect to the server"?*
+
 Probably you did not run the program.
 
 *What if I get an error that says: `"Internal error 500"`?*
+
 Check if you correctly entered the path to the API. Maybe you missed something.
 
 ## Share your feedback
